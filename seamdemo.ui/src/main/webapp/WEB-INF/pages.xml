@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages login-view-id="/login.xhtml"
+ no-conversation-view-id="/home.xhtml"
+ xmlns="http://jboss.com/products/seam/pages"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jboss.com/products/seam/pages http://jboss.com/products/seam/pages-2.2.xsd">
+ <page view-id="*">
+  <navigation>
+   <rule if-outcome="home">
+    <redirect view-id="/home.xhtml"/>
+   </rule>
+  </navigation>
+ </page>
+ <page view-id="/editPerson.xhtml">
+  <description>Edit Person</description>
+  <param converterId="javax.faces.Long" name="personId" value="#{personHome.id}"/>
+  <navigation>
+   <rule if-outcome="persisted">
+    <redirect view-id="/overviewPerson.xhtml"/>
+   </rule>
+   <rule if-outcome="updated">
+    <redirect view-id="/overviewPerson.xhtml"/>
+   </rule>
+   <rule if-outcome="overview">
+    <redirect view-id="/overviewPerson.xhtml"/>
+   </rule>   
+  </navigation>
+ </page>
+ <page view-id="/overviewPerson.xhtml">
+  <action execute="#{personHome.clearInstance}"/>
+  <description>Overview Person</description>
+  <param converterId="javax.faces.Long" name="personId" value="#{personHome.id}"/>
+  <navigation>
+   <rule if-outcome="removed">
+    <redirect view-id="/overviewPerson.xhtml"/>
+   </rule>
+  </navigation>
+ </page>
+</pages>

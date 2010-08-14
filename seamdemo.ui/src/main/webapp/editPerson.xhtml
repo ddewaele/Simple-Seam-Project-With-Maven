@@ -1,0 +1,23 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:rich="http://richfaces.org/rich"
+	template="template/template.xhtml">
+
+	<ui:define name="body">
+		<h1>Create person</h1>
+		<h:form>
+			<h:panelGrid columns="2">
+				Name: 
+				<h:inputText value="#{personHome.instance.name}" />
+			</h:panelGrid>
+			<h:commandButton value="Back" action="overview" immediate="true" />
+			<h:commandButton value="Create person" action="#{personHome.persist}" rendered="#{!personHome.managed}" />
+			<h:commandButton value="Update person" action="#{personHome.update}" rendered="#{personHome.managed}"/>
+		</h:form>
+	</ui:define>
+</ui:composition>

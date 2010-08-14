@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram model-entity="SeamPagesDiagram">
+ <item ID="*" NAME="*" PATH="*" SHAPE="24,17,0,0" TYPE="page" model-entity="SeamPagesDiagramItem">
+  <output ID="/home.xhtml" NAME="output" PATH="/home.xhtml"
+   TARGET="#xhome.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item ID="#editPerson.xhtml" NAME="#xeditPerson.xhtml"
+  PATH="/editPerson.xhtml" SHAPE="24,249,0,0" TYPE="page" model-entity="SeamPagesDiagramItem">
+  <output ID="/overviewPerson.xhtml" NAME="output"
+   PATH="/overviewPerson.xhtml" TARGET="#xoverviewPerson.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+  <output ID="/overviewPerson.xhtml" NAME="output1"
+   PATH="/overviewPerson.xhtml" TARGET="#xoverviewPerson.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+  <output ID="/overviewPerson.xhtml" NAME="output2"
+   PATH="/overviewPerson.xhtml" TARGET="#xoverviewPerson.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+ <item NAME="#xhome.xhtml" PATH="/home.xhtml" SHAPE="344,17,0,0"
+  TYPE="page" model-entity="SeamPagesDiagramItem"/>
+ <item ID="#overviewPerson.xhtml" NAME="#xoverviewPerson.xhtml"
+  PATH="/overviewPerson.xhtml" SHAPE="24,377,0,0" TYPE="page" model-entity="SeamPagesDiagramItem">
+  <output ID="/overviewPerson.xhtml" NAME="output"
+   PATH="/overviewPerson.xhtml" TARGET="#xoverviewPerson.xhtml" model-entity="SeamPagesDiagramItemOutput"/>
+ </item>
+</diagram>
