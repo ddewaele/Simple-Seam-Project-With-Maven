@@ -7,7 +7,6 @@
 	<name>seamdemo.parent</name>
 	<packaging>pom</packaging>
 	<description>Parent POM for the SeamDemo Project</description>
-
 	<build>
 		<pluginManagement>
 			<plugins>
