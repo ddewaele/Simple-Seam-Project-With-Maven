@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context docBase="seamdemo.ui" path="/seamdemo.ui" reloadable="true" source="org.eclipse.jst.jee.server:seamdemo.ui">
+<Resource name="jdbc/seamdemo" auth="Container" type="javax.sql.DataSource"
+         username="seamdemo"
+         password="seamdemo"
+         driverClassName="com.mysql.jdbc.Driver"
+         url="jdbc:mysql://localhost:3306/seamdemo?autoReconnect=true"
+         maxActive="15"
+         maxIdle="7"
+         validationQuery="Select 1" />
+</Context>
