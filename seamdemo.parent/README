@@ -1,0 +1,13 @@
+
+
+Welcome to the Simple-Seam-Project-With-Maven wiki!
+
+In order to run the sample, please make sure you have a mySQL database up & running, and a valid mysql-connector in your Tomcat lib folder
+
+Execute the following commands to create the database :
+
+mysql -u root
+create database seamdemo;
+CREATE USER 'seamdemo@'localhost' IDENTIFIED BY 'seamdemo';
+GRANT ALL ON seamdemo.* TO 'seamdemo'@'localhost'
+
