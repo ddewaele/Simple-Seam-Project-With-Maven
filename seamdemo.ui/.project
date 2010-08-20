@@ -31,12 +31,12 @@
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>org.maven.ide.eclipse.maven2Builder</name>
+			<name>org.jboss.tools.common.verification.verifybuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>org.jboss.tools.common.verification.verifybuilder</name>
+			<name>org.maven.ide.eclipse.maven2Builder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
